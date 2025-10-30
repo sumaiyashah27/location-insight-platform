@@ -1,0 +1,15 @@
+{
+  "name": "location-insight-platform",
+  "version": "1.0.0",
+  "description": "Tech Stack: React (Vite) · Redux Toolkit · TypeScript · GraphQL (Apollo) · Node/Express · JWT",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
