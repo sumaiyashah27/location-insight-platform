@@ -13,7 +13,7 @@ export default {
       return buildAnalytics(filter);
     },
 
-    // ✅ Admin-only: fetch all users
+    // Admin-only: fetch all users
     users: (_, __, { user }) => {
       requireRole(user, ['ADMIN']);
       return users.map(({ passwordHash, ...rest }) => rest);

@@ -15,7 +15,7 @@ export default function ProtectedRoute({ children, roles }: Props) {
 
   useEffect(() => {
     if (!token) navigate('/login')
-    if (roles && user && !roles.includes(user.role)) navigate('/')
+    if (roles && user && !roles.includes(user.role)) navigate('/dashboard')
   }, [token, user, roles, navigate])
 
   if (!token) return null
